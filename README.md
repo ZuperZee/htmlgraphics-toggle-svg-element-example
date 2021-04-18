@@ -1,34 +1,14 @@
-# Bundler
-
-Bundler to make developing code easier and scalable.
-
-## Table of contents
-
-- [Bundler](#bundler)
-  - [Table of contents](#table-of-contents)
-  - [Contains](#contains)
-  - [Usage](#usage)
-  - [Dev site](#dev-site)
-  - [Eslint](#eslint)
-
-## Contains
-
-- [rollup.js](https://rollupjs.org/)
-- [Prettier](https://prettier.io/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [ESLint](https://eslint.org/)
-- [SVGO](https://github.com/svg/svgo)
-- Local development server to run the code live in the browser.
+# A simple toggle svg element example
 
 ## Usage
 
-First you have to install the required dependencies
+Install the required dependencies
 
 ```bash
 npm install
 ```
 
-Then you start the development script
+Start the development script
 
 ```bash
 npm run dev
