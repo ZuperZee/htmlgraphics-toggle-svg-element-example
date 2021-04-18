@@ -2,6 +2,8 @@
 
 ## Usage
 
+Install [Node js](https://nodejs.org/en/)
+
 Install the required dependencies
 
 ```bash
