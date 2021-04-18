@@ -1,0 +1,14 @@
+{
+  "rectangles": [
+    {
+      "selector": "#orange-rectangle",
+      "metric": "orange-metric",
+      "hideOnValue": 1
+    },
+    {
+      "selector": "#blue-rectangle",
+      "metric": "blue-metric",
+      "hideOnValue": 1
+    }
+  ]
+}

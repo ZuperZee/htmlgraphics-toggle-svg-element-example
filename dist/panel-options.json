@@ -1,0 +1,12 @@
+{
+  "add100Percentage": true,
+  "centerAlignContent": true,
+  "overflow": "visible",
+  "SVGBaseFix": true,
+  "codeData": "{\n  \"rectangles\": [\n    {\n      \"selector\": \"#orange-rectangle\",\n      \"metric\": \"orange-metric\",\n      \"hideOnValue\": 1\n    },\n    {\n      \"selector\": \"#blue-rectangle\",\n      \"metric\": \"blue-metric\",\n      \"hideOnValue\": 1\n    }\n  ]\n}\n",
+  "css": "",
+  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 500 500\"><rect id=\"orange-rectangle\" width=\"181\" height=\"175\" x=\"69\" y=\"162\" fill=\"#f80\"/><rect id=\"blue-rectangle\" width=\"181\" height=\"175\" x=\"250\" y=\"162\" fill=\"#08f\"/></svg>",
+  "onRender": "!function(){\"use strict\";function e(e,{noDataValue:n=null,reducerID:t=\"last\"}={}){const s=(l=e,data.series.find((e=>e.name==l)));var l;return(s?s.fields.find((e=>\"Value\"==e.name)):function(e,{searchLabels:n=!0}={}){for(const t of data.series){const s=t.fields.find((t=>[t.name,...n&&t.labels?[t.labels.name]:[]].includes(e)));if(s)return s}}(e))?.state?.calcs?.[t]??n}for(const n of customProperties.rectangles){const{selector:t,metric:s,hideOnValue:l}=n,o=htmlNode.querySelector(t);if(!o)throw new Error(`Could not find element with selector ${t}`);const r=e(s);o.style.display=r===l?\"none\":\"inline\"}}();\n",
+  "dynamicData": false,
+  "onInit": "\n"
+}
