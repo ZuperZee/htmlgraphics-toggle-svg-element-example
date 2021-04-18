@@ -1,10 +1,6 @@
 import type { TimeRange } from "@grafana/data";
 import { createSeries } from "./createSeries";
 
-function randomValue({ min = 0, max = 1 }): number {
-  return Math.random() * (max - min) + min;
-}
-
 enum LoadingState {
   NotStarted = "NotStarted",
   Loading = "Loading",
@@ -17,8 +13,8 @@ function updateData(): void {
   window.data = {
     state: LoadingState.Done,
     series: [
-      createSeries("random-series-1", randomValue({ min: 0, max: 100 })),
-      createSeries("random-series-2", randomValue({ min: -100, max: 100 })),
+      createSeries("orange-metric", Math.random() > 0.5 ? 1 : 0),
+      createSeries("blue-metric", Math.random() > 0.5 ? 1 : 0),
     ],
     // TODO: add a proper TimeRange stub
     timeRange: {} as TimeRange,

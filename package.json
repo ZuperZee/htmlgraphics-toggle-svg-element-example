@@ -24,6 +24,7 @@
     "watch": "rollup -c rollup.config.dev.js -w"
   },
   "devDependencies": {
+    "@gapit/grafana-metric": "^1.0.0",
     "@grafana/data": "~7.1.5",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-json": "^4.1.0",
